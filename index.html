@@ -1,11 +1,73 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="icon" href="/assets/icons/home.png">
+        <link rel="stylesheet" href="/css/styles.css" />
+        <title>Inicio</title>
+    </head>
+    <body>
+        <canvas id="canvas-background"></canvas>
+
+        <header class="main-header">
+            <div class="logo">
+                <a href="#inicio"
+                    style="text-decoration: none; display: flex; align-items: center; gap: 15px;">
+                    <img src="/assets/img/logo.png" alt="Logo">
+                    <h1 class="logo-text"><span>El Super Ritmo</span></h1>
+                </a>
+            </div>
+
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+
+            <nav class="menu">
+                <ul class="nav-list">
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#biografia">Sobre Nosotros</a></li>
+                    <li><a href="#galeria">Galeria</a></li>
+                    <li><a href="#eventos">Eventos</a></li>
+                    <li><a href="#contacto"
+                            class="btn-contacto">¡Contrátanos!</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main class="hero">
+            <div class="hero-content">
+                <h2 class="hero-title">Dale vida a tu evento con <span>El Super
+                        Ritmo</span></h2>
+                <p class="hero-subtitle">La mejor música tropical para tus
+                    fiestas y reuniones</p>
+
+                <a
+                    href="https://wa.me/522711181249?text=¡Hola!%20%0A%0AMe%20interesa%20obtener%20información%20para%20*contratar*%20a%20*El%20Super%20Ritmo*.%20%0A%0A¿Podrían%20darme%20detalles%20de%20sus%20servicios?%20"
+                    target="_blank"
+                    class="whatsapp-btn">
+                    <img
+                        src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg"
+                        alt="WhatsApp Logo">
+                    Contáctanos por WhatsApp
+                </a>
+            </div>
+        </main>
+
+        <footer class="main-footer">
+            <div class="footer-content">
+                <p>&copy; 2026 El Super Ritmo - Todos los derechos
+                    reservados.</p>
+                <div class="social-links">
+                    <a href="#" target="_blank">Facebook</a>
+                    <a href="#" target="_blank">TikTok</a>
+                    <a href="#" target="_blank">WhatsApp</a>
+                </div>
+            </div>
+        </footer>
+
+        <script src="/js/main.js"></script>
+    </body>
 </html>
