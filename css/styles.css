@@ -187,28 +187,6 @@ body {
     margin-bottom: 1.5rem;
 }
 
-.social-links {
-    display: flex;
-    justify-content: center;
-    gap: 2rem;
-}
-
-.social-links a {
-    color: var(--texto);
-    font-size: 0.8rem;
-    text-decoration: none;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    opacity: 0.7;
-    transition: 0.3s;
-}
-
-.social-links a:hover {
-    opacity: 1;
-    color: var(--secundario);
-    text-shadow: 0 0 8px var(--secundario);
-}
-
 .menu-toggle {
     display: none;
 }
@@ -492,4 +470,186 @@ body {
     .format-grid { flex-direction: column; gap: 3rem; }
     .vertical-divider { width: 80%; height: 1px; }
     .ultra-title { font-size: 2.5rem; }
+}
+
+/* --- Seccion Eventos / Formatos --- */
+.events-page {
+    padding-top: 140px;
+}
+
+.formats-section {
+    padding: 4rem 10%;
+    text-align: center;
+}
+
+.formats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2.5rem;
+    margin-top: 3rem;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.format-card {
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    padding: 3rem 2rem;
+    border-radius: 20px;
+    transition: 0.4s;
+    position: relative;
+}
+
+.format-card:hover {
+    border-color: var(--primario);
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
+}
+
+.format-header h3 {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    color: var(--primario);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.badge {
+    position: absolute;
+    top: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--primario);
+    color: #10101c;
+    padding: 5px 15px;
+    border-radius: 50px;
+    font-size: 0.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.format-features {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+}
+
+.format-features li {
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.7);
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.format-features li::before {
+    content: "•";
+    color: var(--primario);
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+/* --- Cobertura y CTA --- */
+.coverage-section {
+    padding: 6rem 10%;
+    margin-top: 4rem;
+}
+
+.coverage-content {
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.05), transparent);
+    border-left: 2px solid var(--primario);
+    padding: 4rem;
+    border-radius: 0 30px 30px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3rem;
+}
+
+.coverage-text h3 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.coverage-text h3 span {
+    color: var(--primario);
+}
+
+.coverage-text p {
+    color: rgba(255, 255, 255, 0.6);
+    max-width: 500px;
+    line-height: 1.6;
+}
+
+.whatsapp-cta {
+    display: inline-block;
+    padding: 1rem 2.5rem;
+    background: var(--primario);
+    color: #10101c;
+    text-decoration: none;
+    font-weight: 700;
+    border-radius: 50px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: 0.3s;
+    white-space: nowrap;
+}
+
+.whatsapp-cta:hover {
+    box-shadow: 0 0 30px var(--primario);
+    transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+    .coverage-content {
+        flex-direction: column;
+        text-align: center;
+        padding: 3rem 2rem;
+    }
+}
+
+/*Social Icons*/
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 2.5rem;
+    margin-top: 1.5rem;
+}
+
+.social-icon {
+    font-size: 1.8rem;
+    color: rgba(255, 255, 255, 0.6);
+    transition: all 0.6s;
+    display: inline-block;
+}
+
+.social-icon:hover {
+    transform: translateY(-5px);
+}
+
+.social-icon:hover .fa-facebook-f {
+    color: #3b5998;
+    text-shadow: 0 0 15px #3b5998;
+}
+
+.social-icon:hover .fa-whatsapp {
+    color: #25d366;
+    text-shadow: 0 0 15px #25d366;
+}
+
+.social-icon:hover .fa-tiktok {
+    color: #fff;
+    text-shadow: 
+        2px 2px 0px #ff0050, 
+        -2px -2px 0px #00f2ea;
+}
+
+.social-icon:hover .fa-instagram {
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285aeb 90%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    filter: drop-shadow(0 0 8px rgba(214, 36, 159, 0.6));
 }
