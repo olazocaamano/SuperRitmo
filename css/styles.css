@@ -345,3 +345,151 @@ body {
         transform: translateY(-8px) rotate(-45deg);
     }
 }
+
+/*Biographic*/
+
+/* --- Mejora Visual Sobre Nosotros --- */
+.about-wrapper {
+    padding-top: 140px;
+    background: transparent;
+}
+
+.about-hero {
+    padding: 6rem 10%;
+    text-align: center;
+}
+
+.ultra-title {
+    font-size: clamp(2.5rem, 8vw, 4.5rem);
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: -2px;
+    margin-bottom: 2rem;
+}
+
+.divider-glow {
+    width: 60px;
+    height: 4px;
+    background: var(--primario);
+    margin: 0 auto 2rem;
+    box-shadow: 0 0 20px var(--primario);
+    border-radius: 10px;
+}
+
+.hero-description {
+    font-size: 1.1rem;
+    color: rgba(255, 255, 255, 0.6);
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.8;
+    font-weight: 300;
+}
+
+/* Tarjetas Estilo Glassmorphism Pro */
+.team-showcase {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 2rem 5%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.team-duo {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+}
+
+.glass-card {
+    background: linear-gradient(135deg, rgba(255,255,255,0.05), rgba(255,255,255,0.01));
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px);
+    border-radius: 24px;
+    padding: 3.5rem 2rem;
+    transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+    position: relative;
+    overflow: hidden;
+}
+
+.glass-card:hover {
+    border-color: var(--primario);
+    background: rgba(255, 255, 255, 0.07);
+    transform: translateY(-5px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+}
+
+.role {
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: var(--primario);
+    display: block;
+    margin-bottom: 1rem;
+}
+
+.glass-card h3 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+.glass-card p {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+/* Sección de Formatos/Servicios */
+.versatility-section {
+    padding: 10rem 5%;
+}
+
+.versatility-container {
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 40px;
+    padding: 5rem 3rem;
+    border: 1px solid rgba(255, 255, 0, 0.05);
+}
+
+.sub-title {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.format-grid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.format-item {
+    text-align: center;
+    flex: 1;
+}
+
+.format-icon {
+    font-family: serif;
+    font-size: 2rem;
+    color: var(--primario);
+    margin-bottom: 1.5rem;
+    opacity: 0.5;
+}
+
+.vertical-divider {
+    width: 1px;
+    height: 150px;
+    background: linear-gradient(transparent, rgba(255, 255, 0, 0.3), transparent);
+}
+
+/* Ajustes Responsive */
+@media (max-width: 768px) {
+    .team-duo { grid-template-columns: 1fr; }
+    .format-grid { flex-direction: column; gap: 3rem; }
+    .vertical-divider { width: 80%; height: 1px; }
+    .ultra-title { font-size: 2.5rem; }
+}
